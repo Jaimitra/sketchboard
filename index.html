@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="board">
+      <canvas
+        class="canvas"
+        tabindex="1"
+        width="1000px"
+        height="400px"
+      ></canvas>
+    </div>
+    <div class="penoperation">
+      <div>
+        <p>Pensize:</p>
+        <input type="range" class="pensize" min="1" max="10" step="1" /><span
+          class="size"
+          >6</span
+        >
+      </div>
+      <div>
+        <p>Pencolor:</p>
+        <input type="color" class="pencolor" />
+      </div>
+      <div>
+        <p>Pointer position:</p>
+        <p class="position">None</p>
+      </div>
+    </div>
+    <div class="canvasoperation">
+      <button class="clear">Clear</button>
+      <button class="pen">Pen</button>
+      <button class="erase">Erase</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
